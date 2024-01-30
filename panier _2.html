@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pan_2.css">
+    <title>Produits Casamance</title>
+    <!-- lien des icone -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- le header -->
+    <header>
+
+        <!-- le navbar -->
+        <nav>
+            <div class="un">
+                <a href="#" class="logo">Fromcasa<i class='bx bx-cycling'></i></a>
+                <!-- bar de Rechercher -->
+                <div class="search-container">
+                    <input type="search" id="search-input" placeholder="Rechercher..." value="">
+                    <button class="but" onclick="search()"><i class='bx bx-search cherche'></i></button>
+                </div>
+
+                <!-- cart icon -->
+                <i class='bx bx-cart-alt' id="cart-icon"></i>
+            </div><br>
+
+
+            <div class="deux" id="navContainer">
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#"><i class='bx bx-menu '></i></a>
+                            <ul>
+                                <li><a href="#Fruits">Fruits</a></li>
+                                <li><a href="#Produits"> Séchés</a></li>
+                                <li><a href="#liquides">Liquides</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contenu">
+                    <a href="Fruits.html">Fruits</a>
+                    <a href="Sechees.html">Produits Séchés</a>
+                    <a href="Liquides.html">Liquides</a>
+
+                </div>
+                <div class="panier-fixe" id="panierFixe">
+                    <i class='bx bx-cart-alt'></i>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- section des produits -->
+    <h2 class="section-title"><b><u>Produits Casamançaises</u></b> </h2>
+    <p>
+        Vous êtes sur <b>Fromcasa</b> et vous avez raison d'y être.
+        Ici vous trouverez tous les produits de la Casamance dont
+        vous avez besoin.Il n'y a pas mieux que de consomer naturel et
+        local. Soyez les bienvenus!
+    </p>
+    <!-- slider -->
+    <div class="slider-container">
+        <div class="slide active" id="slide1">
+            <div class="text-box">
+                <h2>LE MIEL</h2>
+                <p>
+                    C'est un aliment précieux doté de nombreuses propriétés bénéfiques pour la santé et utilisé depuis
+                    des siècles pour ses vertus médicinales.
+                </p>
+                <a href="#" class="btn">Lire plus</a>
+            </div>
+            <img src="pot_miel.jpeg" alt="Slide 1" class="defiles">
+        </div>
+        <div class="slide" id="slide2">
+            <div class="text-box">
+                <h2>Mandarine</h2>
+                <p>
+                    Les mandarines, ces délicieux agrumes sont non seulement un plaisir pour les papilles gustatives,
+                    mais aussi une source de bienfaits pour la santé.
+                </p>
+                <a href="#" class="btn">Lire plus</a>
+            </div>
+            <img src="mandarine.jpg" alt="Slide 2" class="defiles">
+        </div>
+
+        <div class="slide" id="slide3">
+            <div class="text-box">
+                <h2>BANANES</h2>
+                <p>
+                    Les bananes, fruits à la fois délicieux et nutritifs, sont une excellente source de vitamines, de
+                    minéraux et de fibres, ce qui en fait l'un des fruits les plus consommés dans le monde
+                </p>
+                <a href="#" class="btn">Lire plus</a>
+            </div>
+            <img src="bana.jpeg" alt="Slide 3" class="defiles">
+        </div>
+
+        <i class='bx bx-left-arrow-alt ret' id="prevBtn"></i>
+        <i class='bx bx-right-arrow-alt ret' id="nextBtn"></i>
+
+    </div>
+
+    <section class="shop contener">
+
+        <hr width="50%">
+        <div class="liquides">
+            <a name="liquides" class="titre">Les Liquides</a>
+            <div class="shop-content">
+                <!-- boite1  -->
+                <div class="product-box">
+                    <img src="bouteille_un_quart.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Miel</h2>
+                    <span class="prix">1000Fcfa</span>
+                    <i class='bx bxs-heart coeur'>Aimez</i>
+                    <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+                </div>
+
+                <div class="product-box">
+                    <img src="huile.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Huile de palme</h2>
+                    <span class="prix">2000Fcfa/L</span>
+                    <i class='bx bxs-heart coeur'>Aimez</i>
+                    <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+                </div>
+
+                <div class="product-box">
+                    <img src="toulcouna_petit_bouteille.jpeg" alt="" class="product-img">
+                    <h2 class="product-title">Touloucouna</h2>
+                    <span class="prix">500Fcfa</span>
+                    <i class='bx bxs-heart coeur'>Aimez</i>
+                    <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+                </div>
+
+                <div class="product-box">
+                    <img src="touloucouna_litre.jpeg" alt="" class="product-img">
+                    <h2 class="product-title">Touloucouna_1L</h2>
+                    <span class="prix">15000Fcfa</span>
+                    <i class='bx bxs-heart coeur'>Aimez</i>
+                    <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+                </div>
+                <div class="product-box">
+                    <img src="miel.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Du miel</h2>
+                    <span class="prix">4000Fcfa/L</span>
+                    <i class='bx bxs-heart  coeur'>Aimez</i>
+                    <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+                </div>
+
+                <div class="product-box">
+                    <img src="touloucouna1.jpeg" alt="" class="product-img">
+                    <h2 class="product-title">Touloucouna@</h2>
+                    <span class="prix">500Fcfa</span>
+                    <i class='bx bxs-heart coeur'>Aimez</i>
+                    <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+                </div>
+
+                <div class="product-box">
+                    <img src="DiouTire.png" alt="" class="product-img">
+                    <h2 class="product-title">DiouTire</h2>
+                    <span class="prix">2000Fcfa</span>
+                    <i class='bx bxs-heart coeur'>Aimez</i>
+                    <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+                </div>
+
+                <div class="product-box">
+                    <img src="Huile_de_palme3.jpg" alt="" class="product-img">
+                    <h2 class="product-title">Dioutir</h2>
+                    <span class="prix">1000Fcfa</span>
+                    <i class='bx bxs-heart coeur'>Aimez</i>
+                    <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+                </div>
+
+                <div class="product-box">
+                    <img src="cytron_Litre.jpeg" alt="" class="product-img">
+                    <h2 class="product-title">Limon1L</h2>
+                    <span class="prix">2000Fcfa</span>
+                    <i class='bx bxs-heart coeur'>Aimez</i>
+                    <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+                </div>
+
+                <div class="product-box">
+                    <img src="pot_miel.jpeg" alt="" class="product-img">
+                    <h2 class="product-title">Miel</h2>
+                    <span class="prix">1000Fcfa</span>
+                    <i class='bx bxs-heart coeur'>Aimez</i>
+                    <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+                </div>
+
+                <div class="product-box">
+                    <img src="huile5L.jpeg" alt="" class="product-img">
+                    <h2 class="product-title">Huile5L</h2>
+                    <span class="prix">10000Fcfa</span>
+                    <i class='bx bxs-heart coeur'>Aimez</i>
+                    <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+                </div>
+
+                <div class="product-box">
+                    <img src="limon.jpeg" alt="" class="product-img">
+                    <h2 class="product-title">Citron</h2>
+                    <span class="prix">2000Fcfa/L</span>
+                    <i class='bx bxs-heart  coeur'>Aimez</i>
+                    <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+                </div>
+            </div>
+        </div>
+
+
+        <p>
+            Ici vous trouverez les differentes sortes de Fruits disponibles chez nous
+        </p>
+        <a name="Fruits" class="titre">Fruits</a>
+
+        <div class="shop-content">
+            <div class="product-box">
+                <img src="ensemble.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Ensemble</h2>
+                <span class="prix">5000Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box">
+                <img src="annanas.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Ananas</h2>
+                <span class="prix">2000Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box">
+                <img src="FruitsEnsemble.jpg" alt="" class="product-img">
+                <h2 class="product-title">En Gros</h2>
+                <span class="prix">10000Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box">
+                <img src="carasole.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Carasole</h2>
+                <span class="prix">1500Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box">
+                <img src="darkassa.jpg" alt="" class="product-img">
+                <h2 class="product-title">Darkassa</h2>
+                <span class="prix">600Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box">
+                <img src="nioule.jpg" alt="" class="product-img">
+                <h2 class="product-title">Nioules</h2>
+                <span class="prix">2000Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box">
+                <img src="Guerthe.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Guerthe</h2>
+                <span class="prix">500Fcfa/Kg</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box">
+                <img src="ditahk.jpeg" alt="" class="product-img">
+                <h2 class="product-title">ditahk</h2>
+                <span class="prix">500Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box hidden">
+                <img src="banana.jpg" alt="" class="product-img">
+                <h2 class="product-title">Bananas</h2>
+                <span class="prix">1000Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box hidden">
+                <img src="NoixDePalme.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Noix de Palmier</h2>
+                <span class="prix">1000Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box hidden">
+                <img src="papaye.jpeg" alt="" class="product-img">
+                <h2 class="product-title">papaye</h2>
+                <span class="prix">2000Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box hidden">
+                <img src="tol.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Tole</h2>
+                <span class="prix">500Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+            <div class="product-box hidden">
+                <img src="orange.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Orange</h2>
+                <span class="prix">500Fcfa/kg</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+            <div class="product-box hidden">
+                <img src="mads.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Madds</h2>
+                <span class="prix">500Fcfa/kg</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box hidden">
+                <img src="painDeSinge.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Bouille</h2>
+                <span class="prix">500Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box hidden">
+                <img src="papayeZone.jpeg" alt="" class="product-img">
+                <h2 class="product-title">papayeZone</h2>
+                <span class="prix">1000Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box hidden">
+                <img src="mangueQuint.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Mangue</h2>
+                <span class="prix">1500Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+            <div class="product-box hidden">
+                <img src="man.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Mangues</h2>
+                <span class="prix">5000Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+            <div class="product-box hidden">
+                <img src="mangue2.jpg" alt="" class="product-img">
+                <h2 class="product-title">mangue2</h2>
+                <span class="prix">500Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+            <div class="product-box hidden">
+                <img src="mangu.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Mangue</h2>
+                <span class="prix">100Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+            <!-- boite2  -->
+            <div class="product-box hidden">
+                <img src="made.jpg" alt="" class="product-img">
+                <h2 class="product-title">Du made</h2>
+                <span class="prix">1000Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+            <div class="product-box hidden">
+                <img src="Mangues.jpg" alt="" class="product-img">
+                <h2 class="product-title">Mangue</h2>
+                <span class="prix">200Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+            <div class="product-box hidden">
+                <img src="confutur_madd.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Made</h2>
+                <span class="prix">1000Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box hidden">
+                <img src="seraleon.jpg" alt="" class="product-img">
+                <h2 class="product-title">Seraleon</h2>
+                <span class="prix">1000Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box hidden">
+                <img src="solome.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Solome</h2>
+                <span class="prix">1000Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+            <!-- boite3  -->
+            <div class="product-box hidden">
+                <img src="todj.jpg" alt="" class="product-img">
+                <h2 class="product-title">Made</h2>
+                <span class="prix">1000Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+            <div class="product-box hidden">
+                <img src="ndama.jpg" alt="" class="product-img">
+                <h2 class="product-title">Ndamarace</h2>
+                <span class="prix">500Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+            <div class="product-box hidden">
+                <img src="cucu.jpeg" alt="" class="product-img">
+                <h2 class="product-title">cucu</h2>
+                <span class="prix">500Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box hidden">
+                <img src="arrachide.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Arrachides</h2>
+                <span class="prix">800Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box hidden">
+                <img src="cytron.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Limon</h2>
+                <span class="prix">1000Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box hidden">
+                <img src="mang.avif" alt="" class="product-img">
+                <h2 class="product-title">Mango</h2>
+                <span class="prix">2000Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box hidden">
+                <img src="bana.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Banana</h2>
+                <span class="prix">500Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box hidden">
+                <img src="goyave.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Goyave</h2>
+                <span class="prix">1000Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+        </div>
+
+        <button id="showMoreBtn">Voir plus</button>
+
+        <p>
+            Ici vous trouverez les Produits séchés ou fumés dont vous avez besoin pour un bom
+            "Thieb thein"
+        </p>
+        <a name="Produits" class="titre">Produits séchés</a>
+        <div class="shop-content">
+            <div class="product-box">
+                <img src="sole.jpg" alt="" class="product-img">
+                <h2 class="product-title">Sole</h2>
+                <span class="prix">1500Fcfa/kg</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+            <div class="product-box">
+                <img src="ConFume.jpg" alt="" class="product-img">
+                <h2 class="product-title">Con Fume</h2>
+                <span class="prix">1500Fcfa/kg</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+            <div class="product-box">
+                <img src="huitre.jpg" alt="" class="product-img">
+                <h2 class="product-title">huitre </h2>
+                <span class="prix">1000Fcfa/kg</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+            <div class="product-box">
+                <img src="crevette.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Crevette</h2>
+                <span class="prix">100Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+            <div class="product-box">
+                <img src="pagne.jpg" alt="" class="product-img">
+                <h2 class="product-title">Pagne</h2>
+                <span class="prix">500Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box">
+                <img src="KongFume.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Kong</h2>
+                <span class="prix">900Fcfa/kg</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box">
+                <img src="panier crabe.jpg" alt="" class="product-img">
+                <h2 class="product-title">Crabes</h2>
+                <span class="prix">500Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+            <div class="product-box">
+                <img src="huitre-Casamance.jpg" alt="" class="product-img">
+                <h2 class="product-title">Yohos</h2>
+                <span class="prix">1000Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+            <div class="product-box">
+                <img src="crevettes.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Crevettes</h2>
+                <span class="prix">2000Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box">
+                <img src="gniankar.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Gniankar</h2>
+                <span class="prix">1000Fcfa</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box">
+                <img src="djedj.jpg" alt="" class="product-img">
+                <h2 class="product-title">Djedje</h2>
+                <span class="prix">1500Fcfa/Kg</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+            <div class="product-box">
+                <img src="djen.jpeg" alt="" class="product-img">
+                <h2 class="product-title">Djedj</h2>
+                <span class="prix">1000Fcfa/kg</span>
+                <i class='bx bxs-heart coeur'>Aimez</i>
+                <i class='bx bx-shopping-bag add-cart'>Ajoutez</i>
+            </div>
+
+        </div>
+
+
+
+    </section>
+    <!-- le Panier -->
+    <div class="cart">
+        <h2 class="cart-title">votre Panier</h2>
+        <!-- contener -->
+        <div class="cart-content"></div>
+        <!-- Total -->
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-prix">0Fcfa</div>
+        </div>
+        <!-- bouton d'achat -->
+        <button type="button" class="bnt-bay">Achetez Maintenant</button>
+        <!-- cart pour fermer -->
+        <i class="bx bx-x" id="close-cart"></i>
+    </div>
+    <footer id="Contact">
+
+        <!-- formulaire -->
+        <form name="loginForm" id="achatForm" class="vertical-form">
+            <div>
+                <h2>Remplissez ce Formulaire</h2>
+            </div>
+            <label for="Name">Nom: </label>
+            <input type="text" class="nom" oninput="validateInput(this)" required>
+            <label for="pre">Prénom:</label>
+            <input type="text" class="pre" oninput="validateInput(this)" required>
+            <label for="password">Tél:</label>
+            <input type="number" class="tel" min="0" required>
+            <label for="adresse">Adresse:</label>
+            <input class="adresse" required>
+            <button type="submit" class="valider" onsubmit="return validerForm(event)">Valider </button>
+        </form>
+
+
+        <div id="deuxieme_trait"></div>
+        <div id="copyright_Et_Icons">
+            <div id="copyright">
+                <span>©Jenner2023</span>
+            </div>
+ 
+        </div>
+        <div id="icons">
+            <div class="tet">
+                <p class="tete">
+                    Une Question? Une commande à passer?<br>
+                    Appeler nous au <i class='bx bxs-phone-incoming'> <strong>(00221)785206963</strong></i>
+                    ou contactez nous via:
+                </p>
+            </div>
+            <a href="https://web.whatsapp.com/"><i class='bx bxl-whatsapp col'></i></a>
+            <a href="http://www.facebook.fr"><i class='bx bxl-facebook col'></i></a>
+            <a href="http://www.telegram"><i class='bx bxl-telegram col'></i></a>
+        </div>
+    </footer>
+    <!-- linen du javascript -->
+    <script src="pan.js"></script>
+    <!-- le panier fixe -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var navContainer = document.getElementById("navContainer");
+            var panierFixe = document.getElementById("panierFixe");
+            var navContainerOffsetTop = navContainer.offsetTop;
+
+            window.addEventListener("scroll", function () {
+                if (window.pageYOffset >= navContainerOffsetTop) {
+                    navContainer.classList.add("fixed");
+                    panierFixe.style.display = "block";
+                } else {
+                    navContainer.classList.remove("fixed");
+                    panierFixe.style.display = "none";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

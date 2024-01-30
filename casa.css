@@ -1,0 +1,28 @@
+.local{
+    font-size: 15px;
+    cursor: pointer;
+    color: rgb(108, 153, 108);
+}
+
+/* .menu{
+    font-size: 30px;
+} */
+.bar{
+    display: flex;
+    margin-top: 30px;
+    position: fixed;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+/* logo */
+.logo {
+    font-size: 36px;
+    color: green;
+    text-decoration: none;
+}
